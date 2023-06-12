@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+
+body {
+  font-family: "Bodoni Moda", serif;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("../src/assets/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: auto;
+}
+.animation {
+  opacity: 0;
+  animation: fade-in 1.5s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    margin: 5rem 0;
+  }
+  100% {
+    opacity: 1;
+    margin: 0rem 0;
+  }
+}
+
+.gameName {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.3rem;
+  color: red;
+  text-decoration: underline;
+}
+.background {
+  /* background-color: rgb(0, 0, 0); */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: white;
+}
+.playerOptionContainer {
+  display: flex;
+  margin: 0.1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.playerOptionHeading {
+  margin: 0 1rem 0 0;
+  padding: 0.5rem 0rem;
+  color: white;
+  width: 25%;
+}
+.playerOption {
+  margin: 0 1rem 0 0;
+  background-color: gold;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: black;
+  cursor: pointer;
+}
+.playerOptionSelected {
+  background-color: rgb(92, 230, 0);
+}
+.playerOption:hover {
+  opacity: 0.8;
+  transition: all 0.36s;
+}
+/* button:focus {
+  border: none;
+  outline: none;
+} */
+.startGame {
+  background-color: red;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+.startGame:hover {
+  opacity: 0.8;
+  transition: all 0.36s;
+}
+.gameInfo {
+  color: orange;
+  background-color: bisque;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  color: black;
+  margin: 0 auto;
+  min-width: 20vw;
+}
+.settingForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.settings-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0.3rem;
+}
+.timerHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.countDownBg {
+  margin: 0.3rem auto;
+  color: orange;
+  background-color: bisque;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  color: black;
+  min-width: 20vw;
+}
+.margin {
+  margin: 0.5rem;
+}
+.enterName {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid none;
+  color: black;
+}
+.nameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  flex-direction: column;
+}
+.playerName {
+  color: white;
+  font-size: 1rem;
+}
+.nameWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
